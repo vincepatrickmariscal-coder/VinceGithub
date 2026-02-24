@@ -1,0 +1,94 @@
+/* Using modern CSS Nesting and Custom Properties */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --accent: lch(55% 60 260); /* High-fidelity Blue */
+    --accent-hover: lch(45% 70 265);
+    --text-main: #1a1c1e;
+    --radius: 1.25rem;
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+body {
+    font-family: 'Inter Variable', system-ui, sans-serif;
+    background: radial-gradient(circle at top left, #f8f9ff, #e0e7ff);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.container {
+    width: min(90%, 400px);
+    padding: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px); /* Modern Glassmorphism */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+h2 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 0.75rem 0;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 0.75rem;
+    box-sizing: border-box; /* Prevents width overflow */
+    transition: all 0.2s ease;
+    background: white;
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 4px rgba(44, 123, 229, 0.15);
+    }
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 1rem;
+    background: var(--accent);
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        background: var(--accent-hover);
+        filter: brightness(1.1);
+        box-shadow: 0 4px 12px rgba(44, 123, 229, 0.3);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Grouped Messaging styles */
+.message, .success {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.message { background: #fff5f5; color: #e53e3e; }
+.success { background: #f0fff4; color: #38a169; }
