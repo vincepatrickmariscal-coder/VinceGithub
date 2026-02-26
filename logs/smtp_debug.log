@@ -1,0 +1,228 @@
+2026-02-24T11:28:33+01:00 [2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d2e1a72fcca58-826dd68fb6esm10513248b3a.20 - gsmtp
+
+2026-02-24T11:28:33+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-24T11:28:33+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-24T11:28:33+01:00 [1] CLIENT -> SERVER: STARTTLS
+
+2026-02-24T11:28:33+01:00 [2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+2026-02-24T11:28:34+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-24T11:28:34+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-24T11:28:34+01:00 [1] CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-24T11:28:34+01:00 [2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-24T11:28:34+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-24T11:28:34+01:00 [2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-24T11:28:34+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-24T11:28:35+01:00 [2] SERVER -> CLIENT: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-826dd68fb6esm10513248b3a.20 - gsmtp
+
+2026-02-24T11:28:35+01:00 [1] SMTP ERROR: Password command failed: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-826dd68fb6esm10513248b3a.20 - gsmtp
+
+2026-02-24T11:28:35+01:00 [2] SMTP Error: Could not authenticate.
+2026-02-24T11:28:35+01:00 [1] CLIENT -> SERVER: QUIT
+
+2026-02-24T11:28:35+01:00 [2] SERVER -> CLIENT: 221 2.0.0 closing connection d2e1a72fcca58-826dd68fb6esm10513248b3a.20 - gsmtp
+
+2026-02-24T11:28:35+01:00 [2] SMTP Error: Could not authenticate.
+2026-02-24T11:33:28+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-24T11:33:28+01:00 [2] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-24T11:36:55+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-24T11:36:55+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:12:25+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:12:25+01:00 [2] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:13:21+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:13:21+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:20:35+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:20:35+01:00 [2] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:21:58+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:21:58+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:23:59+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:23:59+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:29:01+01:00 [1] CLIENT -> SERVER: EHLO localhost
+
+2026-02-26T10:29:01+01:00 [1] CLIENT -> SERVER: STARTTLS
+
+2026-02-26T10:29:01+01:00 [1] SMTP ERROR: STARTTLS command failed: 500 Unrecognised command
+
+2026-02-26T10:29:01+01:00 [1] SMTP Error: Could not connect to SMTP host. STARTTLS command failed Unrecognised command
+
+2026-02-26T10:29:01+01:00 [1] CLIENT -> SERVER: QUIT
+
+2026-02-26T10:29:01+01:00 [1] SMTP Error: Could not connect to SMTP host. STARTTLS command failed Unrecognised command
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: EHLO localhost
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: MAIL FROM:<no-reply@example.com>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: RCPT TO:<vincepatrickmariscal@gmail.com>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: DATA
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: Date: Thu, 26 Feb 2026 10:32:02 +0100
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: To: vincepatrickmariscal@gmail.com
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: From: Auth System <no-reply@example.com>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: Subject: Verify Your Email
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: Message-ID: <8dGFcMGyd3C8K6HGgVYmdYKSJv4s4i8XZPApBW6I@localhost>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: X-Mailer: PHPMailer 7.0.2 (https://github.com/PHPMailer/PHPMailer)
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: MIME-Version: 1.0
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: Content-Type: text/html; charset=iso-8859-1
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: 
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: 
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER:                     <h3>Email Verification</h3>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER:                     <p>Click below to verify your account (link expires in 24 hours):</p>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER:                     <a href='http://localhost/php-email-auth/index.php?action=verify&token=f175791d475ad62a85e0366ca160e3fff5118f4d79dfa402c99dfd26f16ce044'>Verify Account</a>
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER:                 
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: 
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: .
+
+2026-02-26T10:32:02+01:00 [1] CLIENT -> SERVER: QUIT
+
+2026-02-26T10:41:57+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:41:57+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:43:49+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:43:49+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:47:43+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:47:43+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:55:16+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:55:16+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:55:57+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:55:57+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T10:57:50+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T10:57:50+01:00 [1] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T11:00:01+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T11:00:01+01:00 [2] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T11:01:22+01:00 [1] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+2026-02-26T11:01:22+01:00 [2] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+2026-02-26T11:02:51+01:00 [2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP d9443c01a7336-2adfb5c228csm21765255ad.28 - gsmtp
+
+2026-02-26T11:02:51+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-26T11:02:51+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-26T11:02:51+01:00 [1] CLIENT -> SERVER: STARTTLS
+
+2026-02-26T11:02:51+01:00 [2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+2026-02-26T11:02:52+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-26T11:02:52+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-26T11:02:52+01:00 [1] CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-26T11:02:52+01:00 [2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-26T11:02:52+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-26T11:02:52+01:00 [2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-26T11:02:52+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-26T11:02:53+01:00 [2] SERVER -> CLIENT: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2adfb5c228csm21765255ad.28 - gsmtp
+
+2026-02-26T11:02:53+01:00 [1] SMTP ERROR: Password command failed: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2adfb5c228csm21765255ad.28 - gsmtp
+
+2026-02-26T11:02:53+01:00 [2] SMTP Error: Could not authenticate.
+2026-02-26T11:02:53+01:00 [1] CLIENT -> SERVER: QUIT
+
+2026-02-26T11:02:53+01:00 [2] SERVER -> CLIENT: 221 2.0.0 closing connection d9443c01a7336-2adfb5c228csm21765255ad.28 - gsmtp
+
+2026-02-26T11:02:53+01:00 [2] SMTP Error: Could not authenticate.
+2026-02-26T11:03:21+01:00 [2] SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c70fa5ea093sm1733872a12.1 - gsmtp
+
+2026-02-26T11:03:21+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-26T11:03:22+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-26T11:03:22+01:00 [1] CLIENT -> SERVER: STARTTLS
+
+2026-02-26T11:03:22+01:00 [2] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+2026-02-26T11:03:22+01:00 [1] CLIENT -> SERVER: EHLO DESKTOP-AEMS0VQ
+
+2026-02-26T11:03:22+01:00 [2] SERVER -> CLIENT: 250-smtp.gmail.com at your service, [202.137.122.18]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+2026-02-26T11:03:22+01:00 [1] CLIENT -> SERVER: AUTH LOGIN
+
+2026-02-26T11:03:23+01:00 [2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+2026-02-26T11:03:23+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-26T11:03:23+01:00 [2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+2026-02-26T11:03:23+01:00 [1] CLIENT -> SERVER: [credentials hidden]
+2026-02-26T11:03:23+01:00 [2] SERVER -> CLIENT: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c70fa5ea093sm1733872a12.1 - gsmtp
+
+2026-02-26T11:03:23+01:00 [1] SMTP ERROR: Password command failed: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-c70fa5ea093sm1733872a12.1 - gsmtp
+
+2026-02-26T11:03:23+01:00 [2] SMTP Error: Could not authenticate.
+2026-02-26T11:03:23+01:00 [1] CLIENT -> SERVER: QUIT
+
+2026-02-26T11:03:23+01:00 [2] SERVER -> CLIENT: 221 2.0.0 closing connection 41be03b00d2f7-c70fa5ea093sm1733872a12.1 - gsmtp
+
+2026-02-26T11:03:23+01:00 [2] SMTP Error: Could not authenticate.

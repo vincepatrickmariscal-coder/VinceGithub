@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 class User {
-
+                                                                                 
     private $conn;
 
     public function __construct($conn) {
@@ -52,12 +52,12 @@ class User {
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'abigailcomedidoarchi@gmail.com';
-                $mail->Password   = 'jpunmhvtxjuskhkh';
+                $mail->Username   = 'vincepatrickmariscal@gmail.com';
+                $mail->Password   = 'uagvkfxqxxsyopqx';
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port       = 587;
 
-                $mail->setFrom('yourgmail@gmail.com', 'Email Auth System');
+                $mail->setFrom('vincepatrickmariscal@gmail.com', 'Email Auth System');
                 $mail->addAddress($email);
 
                 $link = "http://localhost/php-email-auth/index.php?action=verify&code=$verificationCode";
