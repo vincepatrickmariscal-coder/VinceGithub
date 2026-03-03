@@ -52,12 +52,17 @@ class User {
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
+<<<<<<< HEAD
                 $mail->Username   = 'dansasam22@gmail.com';
                 $mail->Password   = 'mmpcgnlcubkdoozs';
+=======
+                $mail->Username   = 'vincepatrickmariscal@gmail.com';
+                $mail->Password   = 'uagvkfxqxxsyopqx';
+>>>>>>> fbfeb90dfae9e8490ef84af29b4c3c0db6f20636
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port       = 587;
 
-                $mail->setFrom('yourgmail@gmail.com', 'Email Auth System');
+                $mail->setFrom('vincepatrickmariscal@gmail.com', 'Email Auth System');
                 $mail->addAddress($email);
 
                 $link = "http://localhost/php-email-auth/index.php?action=verify&code=$verificationCode";
