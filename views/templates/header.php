@@ -12,7 +12,7 @@ if (empty($_SESSION['csrf_token'])) {
 <html>
 <head>
     <title>Email Authentication</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="/php-email-auth/public/style.css">
 </head>
 <body>
 <div class="container">
