@@ -14,7 +14,7 @@ function loginAuthLoadDotEnv(string $path): void
 
     foreach ($lines as $line) {
         $line = trim($line);
-        if ($line === '' || str_starts_with($line, '#')) {
+        if ($line === '' || (isset($line[0]) && $line[0] === '#')) {
             continue;
         }
 
@@ -30,8 +30,12 @@ function loginAuthLoadDotEnv(string $path): void
         }
 
         // Strip surrounding quotes
-        if ((str_starts_with($val, '"') && str_ends_with($val, '"')) || (str_starts_with($val, "'") && str_ends_with($val, "'"))) {
-            $val = substr($val, 1, -1);
+        if ($val !== '') {
+            $first = substr($val, 0, 1);
+            $last = substr($val, -1);
+            if (($first === '"' && $last === '"') || ($first === "'" && $last === "'")) {
+                $val = substr($val, 1, -1);
+            }
         }
 
         if (getenv($key) === false) {
