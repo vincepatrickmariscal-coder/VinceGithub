@@ -29,6 +29,17 @@ switch ($action) {
         include 'views/login.php';
         break;
 
+    case 'otp':
+        if (!isset($_SESSION['pending_user_id'])) {
+            header("Location: index.php?action=login");
+            exit();
+        }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $message = $auth->verifyOtp($_POST['otp'], $_POST['csrf_token']);
+        }
+        include 'views/otp.php';
+        break;
+
     case 'home':
         if (!isset($_SESSION['user'])) {
             header("Location: index.php?action=login");
